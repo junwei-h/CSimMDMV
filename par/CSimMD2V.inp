@@ -1,0 +1,39 @@
+#input parameter file created by Junwei Huang @ University of Toronto, Jan 3 2009
+#====================
+#Horizon X, Y, Top, Bottom, and Sampling interval (m)
+200.0 400.0 850.0 1168.0 2.0
+#Number of boreholes and logs file name, X,Y,depth, v1,lv1, v2,lv2, v3,lv3, бн
+#====================
+testlogs.txt
+#Number of variants N <= 3 for Version V1.1
+2
+# switch: nonconditional (0) / conditional (1)
+0
+#===================
+#orgin point x0, y0, z0
+513185	7705619 0
+#===================
+#ax ay range in meters:
+#start step end
+50	50	50
+100	50	100
+# maximum Monte Carlo Simulations: MaxMC
+1
+#cdf parameters: az, hurst number, nugget effect
+#C(v1,v1~Vn), C(v2, V2~Vn), e.g.,
+#C(Vp, Vp),
+#C(Vs, Vp),
+#C(Vs, Vs),
+#C(Density,Vp),
+#C(Density,Vs),
+#C(Density, Density),and
+#Must be in the order consistent with v1, v2, v3,бн
+#===================
+#az(m)	v	n0
+11.5116  0.24998	0
+9.1185	0.20667		0
+7.2964	0.27265		0
+#===Output file name head string====
+test
+#===Output Rock Physics Model results tag
+0
